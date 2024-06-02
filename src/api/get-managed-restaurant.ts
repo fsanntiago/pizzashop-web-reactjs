@@ -9,7 +9,7 @@ interface ManagedRestaurant {
   managerId: string | null
 }
 
-interface GetManagedRestaurantResponse {
+export interface GetManagedRestaurantResponse {
   managedRestaurant: ManagedRestaurant
 }
 
