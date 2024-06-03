@@ -41,7 +41,7 @@ export function OrderTableRow({ order }: OrderTableRowProps) {
       <TableCell>
         <OrderStatus status={order.status} />
       </TableCell>
-      <TableCell className="font-medium">{order.customName}</TableCell>
+      <TableCell className="font-medium">{order.customerName}</TableCell>
       <TableCell className="font-medium">{formatPrice(order.total)}</TableCell>
       <TableCell>
         <Button variant="outline" size="xs">
