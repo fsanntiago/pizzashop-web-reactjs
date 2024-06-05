@@ -21,6 +21,8 @@ import {
 } from '@/components/ui/table'
 import { formatPrice } from '@/utils/formatPrice'
 
+import { OrderDetailsSkeleton } from './order-datails-skeleton'
+
 interface OrdersDetailsProps {
   orderId: string
   open: boolean
@@ -39,7 +41,7 @@ export function OrderDetails({ orderId, open }: OrdersDetailsProps) {
         <DialogTitle>Pedido: {orderId}</DialogTitle>
         <DialogDescription>Detalhes do pedido</DialogDescription>
       </DialogHeader>
-      {ordersDetails && (
+      {ordersDetails ? (
         <div className="space-y-6">
           <Table>
             <TableBody>
@@ -116,6 +118,8 @@ export function OrderDetails({ orderId, open }: OrdersDetailsProps) {
             </TableFooter>
           </Table>
         </div>
+      ) : (
+        <OrderDetailsSkeleton />
       )}
     </DialogContent>
   )
