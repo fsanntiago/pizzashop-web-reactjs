@@ -1,7 +1,5 @@
 import { Link, LinkProps, useLocation } from 'react-router-dom'
 
-import { cn } from '@/lib/utils'
-
 export type NavLinkProps = LinkProps
 
 export function NavLink({ to, ...rest }: NavLinkProps) {
@@ -10,10 +8,8 @@ export function NavLink({ to, ...rest }: NavLinkProps) {
   return (
     <Link
       to={to}
-      className={cn(
-        to === pathname ? 'text-foreground' : 'text-muted-foreground',
-        'flex items-center gap-1.5 text-sm font-medium hover:text-foreground',
-      )}
+      data-current={to === pathname}
+      className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground data-[current=true]:text-foreground"
       {...rest}
     />
   )
