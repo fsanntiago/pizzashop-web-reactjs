@@ -6,11 +6,11 @@ interface UserProfile {
   email: string
   phone: string | null
   role: 'manager' | 'customer'
-  createdAt: Date
-  updatedAt: Date
+  createdAt: Date | null
+  updatedAt: Date | null
 }
 
-interface GetProfileResponse {
+export interface GetProfileResponse {
   user: UserProfile
 }
 

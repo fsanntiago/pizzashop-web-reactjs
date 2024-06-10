@@ -4,8 +4,8 @@ interface ManagedRestaurant {
   name: string
   description: string | null
   id: string
-  createdAt: Date
-  updatedAt: Date
+  createdAt: Date | null
+  updatedAt: Date | null
   managerId: string | null
 }
 
