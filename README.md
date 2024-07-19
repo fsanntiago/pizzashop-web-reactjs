@@ -1,30 +1,90 @@
-# React + TypeScript + Vite
+# PizzaShop Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a web application for a pizza shop, developed using the following technologies:
 
-Currently, two official plugins are available:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static typing.
+- **Vite**: A fast and modern build tool.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- View the pizza menu.
+- Customize orders.
+- Add items to the shopping cart.
+- Complete orders.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Requirements
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (version 14 or higher)
+- npm or yarn
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone this repository:
+    ```sh
+    git clone https://github.com/fsanntiago/pizzashop-web-reactjs.git
+    ```
+
+2. Navigate to the project directory:
+    ```sh
+    cd pizzashop-web-reactjs
+    ```
+
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
+    or
+    ```sh
+    yarn install
+    ```
+
+## Usage
+
+1. Start the development server:
+    ```sh
+    npm run dev
+    ```
+    or
+    ```sh
+    yarn dev
+    ```
+
+2. Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
+
+## Project Structure
+
+- **public/**: Public files for the application.
+- **src/**: Source code for the application.
+  - **components/**: Reusable components.
+  - **pages/**: Application pages.
+  - **styles/**: Styling files.
+  - **utils/**: Utilities and helpers.
+
+## Additional Configuration
+
+### ESLint
+
+This project uses ESLint for code linting. Adjust the `.eslintrc.json` file as needed.
+
+### Prettier
+
+Prettier is configured for code formatting. Adjust the `prettier.config.cjs` file as needed.
+
+## Contributing
+
+1. Fork this repository.
+2. Create a branch for your feature or bug fix:
+    ```sh
+    git checkout -b my-feature
+    ```
+3. Commit your changes:
+    ```sh
+    git commit -m 'Add my new feature'
+    ```
+4. Push to the remote repository:
+    ```sh
+    git push origin my-feature
+    ```
+5. Open a pull request.
