@@ -16,6 +16,7 @@ This repository contains a web application for a pizza shop, developed using the
 
 ## Requirements
 
+- Run [API PizzaShop](https://github.com/fsanntiago/api-pizzashop-bun)
 - Node.js (version 14 or higher)
 - npm or yarn
 
