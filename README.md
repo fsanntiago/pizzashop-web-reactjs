@@ -18,7 +18,7 @@ This repository contains a web application for a pizza shop, developed using the
 
 - Run [API PizzaShop](https://github.com/fsanntiago/api-pizzashop-bun)
 - Node.js (version 14 or higher)
-- npm or yarn
+- npm or pnpm
 
 ## Installation
 
@@ -38,7 +38,7 @@ This repository contains a web application for a pizza shop, developed using the
     ```
     or
     ```sh
-    yarn install
+    pnpm install
     ```
 
 ## Usage
@@ -49,7 +49,7 @@ This repository contains a web application for a pizza shop, developed using the
     ```
     or
     ```sh
-    yarn dev
+    pnpm dev
     ```
 
 2. Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
